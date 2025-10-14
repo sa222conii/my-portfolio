@@ -1,22 +1,24 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import { Briefcase, User, Mail } from 'lucide-react'; // アイコンライブラリ
-import ContactForm from '../components/ContactForm';
+import ContactModal from '../components/ContactModal';
 
 
 // ポートフォリオのダミーデータ
 const projects = [
   {
     id: 1,
-    title: "ECサイト風デモアプリ",
-    description: "Next.jsとTypeScriptで構築したレスポンシブなショッピングカート機能付きデモサイト。状態管理にZustandを使用。",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Zustand"],
+    title: "準備中",
+    description: "構築したWEBアプリの一部機能。実在する住所の入力補助機能。本デモではServerless関数を使用しています。",
+    tags: ["Node.js", "SQLite", "Bootstrap CSS", "HTML5"],
     link: "#",
   },
   {
     id: 2,
-    title: "個人ブログシステム",
-    description: "シンプルなMarkdownベースのブログ。SSG（静的サイト生成）を活用し、高速な読み込みを実現。",
-    tags: ["Next.js", "Markdown", "Vercel"],
+    title: "準備中",
+    description: "シンプルな番号発券システム。本デモではServerless関数を使用しています。",
+    tags: ["Node.js", "SQLite", "Bootstrap CSS", "HTML5"],
     link: "#",
   },
 ];
@@ -24,6 +26,8 @@ const projects = [
 
 
 const PortfolioPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
 
@@ -51,7 +55,7 @@ const PortfolioPage = () => {
           <p className="text-lg leading-relaxed mb-4">
           私は、業務効率化を目的とした社内用WebアプリケーションからPython製デスクトップツールまで、複数のプラットフォームにおける開発を一人で完遂してきました。特に、システム全体（フロントエンド、バックエンド、DB）を一貫して担当するフルサイクル開発を行ってきました。
           構築した社内Webアプリは、実際の業務課題を解決し、実運用に耐えるシステムとして利用されてきました。この経験から、利用者のニーズを深く理解し、実用性を追求したアプリケーション設計を強みとしています。
-          開発プロセスにおいては、生成AI（コード補完、設計補助）**を積極的に活用することで、開発速度と品質の向上を実現しています。新しい技術やツールを柔軟に取り入れ、高速でプロトタイピングからリリースまで持っていく現代的な開発手法を実践しています。
+          開発プロセスにおいては、生成AI（コード補完、設計補助）を積極的に活用することで、開発速度と品質の向上を実現しています。新しい技術やツールを柔軟に取り入れ、高速でプロトタイピングからリリースまで持っていく現代的な開発手法を実践しています。
           </p>
           
           <div className="mt-6">
@@ -143,16 +147,25 @@ const PortfolioPage = () => {
 
         {/* 4. 連絡先セクション */}
         <section id="contact" className="my-12 p-8 bg-white rounded-xl shadow-lg">
-          <div className="flex items-center space-x-4 mb-6">
+          <div className="flex items-center space-x-4 mb-6 justify-center">
             <Mail className="w-8 h-8 text-indigo-500" />
             <h2 className="text-3xl font-semibold border-b-2 border-indigo-500 pb-1">お問い合わせ</h2>
           </div>
           <p className="text-lg text-center mb-8">
-            こちらのフォームからお気軽にご連絡ください。
+            お気軽にご連絡ください。
           </p>
-          <ContactForm />
+          <div className="text-center">
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-transform transform hover:scale-105 duration-300 shadow-lg"
+            >
+              お問い合わせフォームを開く
+            </button>
+          </div>
         </section>
       </main>
+
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };
