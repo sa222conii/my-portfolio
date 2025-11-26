@@ -9,10 +9,10 @@ import ContactModal from '../components/ContactModal';
 const projects = [
   {
     id: 1,
-    title: "準備中",
-    description: "構築したWEBアプリの一部機能。実在する住所の入力補助機能。本デモではServerless関数を使用しています。",
-    tags: ["Node.js", "SQLite", "Bootstrap CSS", "HTML5"],
-    link: "#",
+    title: "cafe site",
+    description: "JavaScriptによるスクロールアニメーションを実装し、心地よいユーザー体験を目指したカフェのシングルページサイトです。",
+    tags: ["HTML5", "CSS", "JavaScript"],
+    link: "/works/cafe/index.html",
   },
   {
     id: 2,

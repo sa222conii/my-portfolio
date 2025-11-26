@@ -1,0 +1,68 @@
+import requests
+from bs4 import BeautifulSoup
+import urllib.parse
+import time
+import random
+
+def get_first_search_result_url(keyword):
+    """
+    Yahoo!検索を行い、Web検索結果の1位のアドレスを収集する関数。（セレクタ修正版）
+    """
+    encoded_keyword = urllib.parse.quote(keyword)
+    url = f"https://search.yahoo.co.jp/search?p={encoded_keyword}"
+    
+    headers = {
+        # ブラウザとして振る舞うためのUser-Agentを設定
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
+    
+    try:
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        # ----------------------------------------------------------------------
+        # 【最も重要な修正点】
+        # Yahoo!検索のWeb検索結果のリンクは、多くの場合、
+        # 検索結果のカード要素（sw-Card）内のタイトル（h3）にあるaタグです。
+        # ----------------------------------------------------------------------
+        
+        # 検索結果のカード要素をすべて取得します。
+        # Yahoo!のWeb検索結果リストのクラス名は「sw-Card」であることが多いです。
+        result_cards = soup.find_all('div', class_='sw-Card')
+        
+        # 最初のカード（検索結果1位）をチェック
+        if result_cards:
+            first_card = result_cards[0]
+            
+            # カードの中からリンク（aタグ）を探します。
+            # 検索結果のタイトルリンクは、h3タグ内のaタグであることが一般的です。
+            first_link = first_card.find('a', href=True)
+            
+            if first_link:
+                result_url = first_link['href']
+                
+                # 'javascript:void(0)' や 広告タグなど、無効なリンクを除外
+                if result_url and not result_url.startswith('javascript:'):
+                    return result_url
+                else:
+                    return f"エラー: 1位のリンクは無効なアドレスでした: {result_url}"
+            else:
+                return "エラー: 1位のカード内に有効なリンクが見つかりませんでした。"
+        else:
+            return "エラー: 検索結果のカード要素が見つかりませんでした。CSSセレクタを確認してください。"
+
+    except requests.exceptions.RequestException as e:
+        return f"エラーが発生しました: {e}"
+    
+# --- 実行部分（省略） ---
+if __name__ == "__main__":
+    search_query = "ホカオネオネ"
+    print(f"'{search_query}'でYahoo!検索しています...")
+    time.sleep(random.uniform(2, 5))
+    result_url = get_first_search_result_url(search_query)
+    print("-" * 30)
+    print(f"検索キーワード: {search_query}")
+    print(f"検索結果1位のアドレス: {result_url}")
+    print("-" * 30)

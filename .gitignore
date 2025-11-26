@@ -26,6 +26,10 @@ yarn-error.log*
 
 # Local Environment Variables
 .env*.local
+.env
 
 # Turbopack
 .turbo
+/src/generated/prisma
+
+.vercel
