@@ -16,10 +16,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "準備中",
+    title: "歯科医院",
     description: "シンプルな番号発券システム。本デモではServerless関数を使用しています。",
-    tags: ["Node.js", "SQLite", "Bootstrap CSS", "HTML5"],
-    link: "#",
+    tags: ["HTML5", "CSS", "JavaScript"],
+    link: "/works/dental_clinic/src/index.html",
   },
 ];
 
