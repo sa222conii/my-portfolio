@@ -17,9 +17,9 @@ const projects = [
   {
     id: 2,
     title: "歯科医院",
-    description: "シンプルな番号発券システム。本デモではServerless関数を使用しています。",
+    description: "複数ページのサイトで、ユーザーに安心感を与えるように必要な情報や予約フォームを設置しました。",
     tags: ["HTML5", "CSS", "JavaScript"],
-    link: "/works/dental_clinic/src/index.html",
+    link: "/works/dental_clinic/index.html",
   },
 ];
 
