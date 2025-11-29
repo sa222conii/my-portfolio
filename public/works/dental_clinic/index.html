@@ -1,15 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>さくら歯科クリニック - 地域の皆様の笑顔と健康を守る</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">歯</div>
+                    <div class="logo-text">
+                        <h1>さくら歯科クリニック</h1>
+                        <p>Sakura Dental Clinic</p>
+                    </div>
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <a href="index.html" class="active">ホーム</a>
+                    <a href="about.html">クリニック紹介</a>
+                    <a href="services.html">診療内容</a>
+                    <a href="staff.html">スタッフ紹介</a>
+                    <a href="access.html">アクセス</a>
+                </nav>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>歯医者ランディングページ</title>
-    </head>
+                <div class="header-actions">
+                    <div class="phone-number">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>03-○○○○-○○○○</span>
+                    </div>
+                    <a href="access.html#reservation" class="btn btn-primary">ご予約</a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1629962195489-9d137ad40517?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkZW50YWwlMjBjbGluaWN8ZW58MXx8fHwxNzYyNjIzNzc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="クリニック内観">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h2>あなたの笑顔を<br>一生守りたい</h2>
+                <p>最新の設備と確かな技術で、地域の皆様の<br>お口の健康をサポートします</p>
+                <div class="hero-buttons">
+                    <a href="access.html#reservation" class="btn btn-white">
+                        初診予約はこちら
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="access.html" class="btn btn-outline-white">診療時間を確認</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Section -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="quick-info-grid">
+                <div class="quick-info-card">
+                    <svg class="quick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h3>診療時間</h3>
+                    <p>平日 9:00-19:00</p>
+                    <p>土日 9:00-17:00</p>
+                    <a href="access.html" class="quick-link">詳しく見る →</a>
+                </div>
+
+                <div class="quick-info-card">
+                    <svg class="quick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <h3>アクセス</h3>
+                    <p>○○駅から徒歩3分</p>
+                    <p>駐車場完備</p>
+                    <a href="access.html" class="quick-link">詳しく見る →</a>
+                </div>
+
+                <div class="quick-info-card">
+                    <svg class="quick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <h3>ご予約・お問い合わせ</h3>
+                    <p class="phone-large">03-○○○○-○○○○</p>
+                    <a href="access.html#reservation" class="quick-link">ご予約フォーム →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Preview -->
+    <section class="section-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>当院の特徴</h2>
+                <p>患者様に安心して通っていただけるクリニックを目指しています</p>
+            </div>
+
+            <div class="features-preview-grid">
+                <div class="feature-preview-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3>痛みの少ない治療</h3>
+                    <p>最新の麻酔技術で、できる限り痛みを抑えた治療を心がけています。</p>
+                </div>
+
+                <div class="feature-preview-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>徹底した衛生管理</h3>
+                    <p>すべての器具を滅菌処理し、安心・安全な診療環境を提供します。</p>
+                </div>
+
+                <div class="feature-preview-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>土日診療対応</h3>
+                    <p>平日お忙しい方でも通いやすいよう、土日も診療しています。</p>
+                </div>
+
+                <div class="feature-preview-card">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>家族で通える</h3>
+                    <p>お子様からご年配の方まで、家族みんなで通えるクリニックです。</p>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <a href="about.html" class="btn btn-outline-primary">クリニック紹介を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="section-preview bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>診療内容</h2>
+                <p>幅広い歯科治療に対応しています</p>
+            </div>
+
+            <div class="services-preview-grid">
+                <div class="service-preview-card">
+                    <div class="service-number">01</div>
+                    <h3>一般歯科</h3>
+                    <p>虫歯や歯周病など、日常的な歯のトラブルに対応します</p>
+                </div>
+
+                <div class="service-preview-card">
+                    <div class="service-number">02</div>
+                    <h3>予防歯科</h3>
+                    <p>健康な歯を守るための予防ケアをサポートします</p>
+                </div>
+
+                <div class="service-preview-card">
+                    <div class="service-number">03</div>
+                    <h3>小児歯科</h3>
+                    <p>お子様の成長に合わせた優しい治療を行います</p>
+                </div>
+
+                <div class="service-preview-card">
+                    <div class="service-number">04</div>
+                    <h3>審美歯科</h3>
+                    <p>美しい歯並びと白い歯を実現します</p>
+                </div>
+
+                <div class="service-preview-card">
+                    <div class="service-number">05</div>
+                    <h3>インプラント</h3>
+                    <p>失った歯を自然な見た目と機能で取り戻します</p>
+                </div>
+
+                <div class="service-preview-card">
+                    <div class="service-number">06</div>
+                    <h3>矯正歯科</h3>
+                    <p>理想的な歯並びと噛み合わせを実現します</p>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <a href="services.html" class="btn btn-primary">診療内容の詳細を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="section-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>お知らせ</h2>
+            </div>
+
+            <div class="news-list">
+                <a href="#" class="news-item">
+                    <span class="news-date">2025.11.20</span>
+                    <span class="news-category">お知らせ</span>
+                    <span class="news-title">年末年始の診療時間のご案内</span>
+                </a>
+
+                <a href="#" class="news-item">
+                    <span class="news-date">2025.11.15</span>
+                    <span class="news-category">診療</span>
+                    <span class="news-title">新しいホワイトニングメニューを導入しました</span>
+                </a>
+
+                <a href="#" class="news-item">
+                    <span class="news-date">2025.11.01</span>
+                    <span class="news-category">イベント</span>
+                    <span class="news-title">11月は無料歯科検診月間です</span>
+                </a>
+
+                <a href="#" class="news-item">
+                    <span class="news-date">2025.10.25</span>
+                    <span class="news-category">お知らせ</span>
+                    <span class="news-title">歯科衛生士を募集しています</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>さくら歯科クリニック</h3>
+                    <p>地域の皆様の笑顔と健康を守る、信頼できる歯科医院です。</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>診療内容</h4>
+                    <ul>
+                        <li><a href="services.html">一般歯科</a></li>
+                        <li><a href="services.html">予防歯科</a></li>
+                        <li><a href="services.html">小児歯科</a></li>
+                        <li><a href="services.html">審美歯科</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>クリニック情報</h4>
+                    <ul>
+                        <li><a href="about.html">クリニック紹介</a></li>
+                        <li><a href="staff.html">スタッフ紹介</a></li>
+                        <li><a href="access.html">アクセス</a></li>
+                        <li><a href="#">よくある質問</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>お問い合わせ</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            03-○○○○-○○○○
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            ○○@○○-○○.jp
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            東京都○○区○○１丁目○-○
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 sa222 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
