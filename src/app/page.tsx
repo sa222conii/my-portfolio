@@ -145,7 +145,7 @@ const PortfolioPage = () => {
           </div>
         </section>
 
-        {/* 4. 連絡先セクション */}
+        {/* 4. 連絡先セクション　 */}
         <section id="contact" className="my-12 p-8 bg-white rounded-xl shadow-lg">
           <div className="flex items-center space-x-4 mb-6 justify-center">
             <Mail className="w-8 h-8 text-indigo-500" />
