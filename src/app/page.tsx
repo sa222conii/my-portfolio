@@ -144,9 +144,9 @@ const PortfolioPage = () => {
             ))}
           </div>
         </section>
-
+        
         {/* 4. 連絡先セクション　 */}
-        <section id="contact" className="my-12 p-8 bg-white rounded-xl shadow-lg">
+        {/*<section id="contact" className="my-12 p-8 bg-white rounded-xl shadow-lg">
           <div className="flex items-center space-x-4 mb-6 justify-center">
             <Mail className="w-8 h-8 text-indigo-500" />
             <h2 className="text-3xl font-semibold border-b-2 border-indigo-500 pb-1">お問い合わせ</h2>
@@ -162,7 +162,7 @@ const PortfolioPage = () => {
               お問い合わせフォームを開く
             </button>
           </div>
-        </section>
+        </section>*/}
       </main>
 
       <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
