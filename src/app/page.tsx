@@ -12,7 +12,7 @@ const projects = [
     title: "SEO対策ツール (Web App)",
     description: "OpenAI APIを活用したSEO分析ツール。キーワードとURLを入力するだけで、競合分析と改善提案を自動生成します。",
     tags: ["Next.js", "OpenAI API", "Web App", "Python"],
-    link: "https://seo-ai-checker-x9ba.vercel.app/",
+    link: "https://seo-ai-checker.vercel.app/",
     image: "",
   },
   {
