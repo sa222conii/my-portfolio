@@ -8,6 +8,14 @@ import ContactModal from '../components/ContactModal';
 // ポートフォリオのダミーデータ
 const projects = [
   {
+    id: 4,
+    title: "SEO対策ツール (Web App)",
+    description: "OpenAI APIを活用したSEO分析ツール。キーワードとURLを入力するだけで、競合分析と改善提案を自動生成します。",
+    tags: ["Next.js", "OpenAI API", "Web App", "Python"],
+    link: "https://seo-ai-checker-x9ba.vercel.app/",
+    image: "",
+  },
+  {
     id: 1,
     title: "美容クリニック LP",
     description: "30-40代女性をターゲットにした、ラグジュアリーで清潔感のあるランディングページ。SEOを意識した構成と、信頼感を醸成するデザインを重視しました。",
@@ -29,14 +37,6 @@ const projects = [
     description: "既存の静的サイトをWordPressテーマ化。お知らせ機能やブログ機能を実装し、クライアント自身で更新可能なCMSサイトとして構築しました。",
     tags: ["WordPress", "PHP", "CMS", "Theme Dev"],
     link: "/works/wp_tax_office.pdf",
-    image: "",
-  },
-  {
-    id: 4,
-    title: "SEO対策ツール (Web App)",
-    description: "OpenAI APIを活用したSEO分析ツール。キーワードとURLを入力するだけで、競合分析と改善提案を自動生成します。",
-    tags: ["Next.js", "OpenAI API", "Web App", "Python"],
-    link: "https://seo-ai-checker-x9ba.vercel.app/",
     image: "",
   },
   {
