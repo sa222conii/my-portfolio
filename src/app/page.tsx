@@ -9,17 +9,43 @@ import ContactModal from '../components/ContactModal';
 const projects = [
   {
     id: 1,
-    title: "cafe site",
-    description: "JavaScriptによるスクロールアニメーションを実装し、心地よいユーザー体験を目指したカフェのシングルページサイトです。",
-    tags: ["HTML5", "CSS", "JavaScript"],
-    link: "/works/cafe/index.html",
+    title: "美容クリニック LP",
+    description: "30-40代女性をターゲットにした、ラグジュアリーで清潔感のあるランディングページ。SEOを意識した構成と、信頼感を醸成するデザインを重視しました。",
+    tags: ["HTML5", "CSS", "Design", "Responsive"],
+    link: "/works/beauty-clinic/index.html",
+    image: "",
   },
   {
     id: 2,
-    title: "歯科医院",
-    description: "複数ページのサイトで、ユーザーに安心感を与えるように必要な情報や予約フォームを設置しました。",
-    tags: ["HTML5", "CSS", "JavaScript"],
-    link: "/works/dental_clinic/index.html",
+    title: "SNSマーケティング LP",
+    description: "SNSマーケティング企業のサービス紹介LP。モダンで動的なデザインを採用し、動画制作やコンテンツ作成のクリエイティビティを強調しています。",
+    tags: ["HTML5", "CSS", "JavaScript", "Animation"],
+    link: "/works/funny-sns/index.html",
+    image: "",
+  },
+  {
+    id: 3,
+    title: "税理士事務所サイト (WordPress)",
+    description: "既存の静的サイトをWordPressテーマ化。お知らせ機能やブログ機能を実装し、クライアント自身で更新可能なCMSサイトとして構築しました。",
+    tags: ["WordPress", "PHP", "CMS", "Theme Dev"],
+    link: "/works/wp_tax_office.pdf",
+    image: "",
+  },
+  {
+    id: 4,
+    title: "SEO対策ツール (Web App)",
+    description: "OpenAI APIを活用したSEO分析ツール。キーワードとURLを入力するだけで、競合分析と改善提案を自動生成します。",
+    tags: ["Next.js", "OpenAI API", "Web App", "Python"],
+    link: "https://seo-ai-checker-x9ba.vercel.app/",
+    image: "",
+  },
+  {
+    id: 5,
+    title: "セミナー資料作成 (スライド)",
+    description: "視覚的な伝わりやすさを重視した、セミナー用プレゼンテーション資料作成。構成からデザインまで担当しました。",
+    tags: ["PowerPoint", "Design", "Presentation", "PDF"],
+    link: "/works/suit.pdf",
+    image: "",
   },
 ];
 
@@ -51,78 +77,89 @@ const PortfolioPage = () => {
             <User className="w-8 h-8 text-indigo-500" />
             <h2 className="text-3xl font-semibold border-b-2 border-indigo-500 pb-1">自己紹介</h2>
           </div>
-          
+
           <p className="text-lg leading-relaxed mb-4">
-          私は、業務効率化を目的とした社内用WebアプリケーションからPython製デスクトップツールまで、複数のプラットフォームにおける開発を一人で完遂してきました。特に、システム全体（フロントエンド、バックエンド、DB）を一貫して担当するフルサイクル開発を行ってきました。
-          構築した社内Webアプリは、実際の業務課題を解決し、実運用に耐えるシステムとして利用されてきました。この経験から、利用者のニーズを深く理解し、実用性を追求したアプリケーション設計を強みとしています。
-          開発プロセスにおいては、生成AI（コード補完、設計補助）を積極的に活用することで、開発速度と品質の向上を実現しています。新しい技術やツールを柔軟に取り入れ、高速でプロトタイピングからリリースまで持っていく現代的な開発手法を実践しています。
+            「ビジネスの成果につながるWebサイト作り」をモットーに、デザインから実装（コーディング・WordPress化）、そしてWebアプリケーション開発まで幅広く手がけています。<br /><br />
+            これまではシステム開発を中心に活動してきましたが、現在はその技術力を活かし、デザイン性と機能性を兼ね備えたWebサイト制作に注力しています。
+            単に作るだけでなく、SEO対策や運用更新のしやすさ（CMS構築）まで考慮した、長く使えるサイトを提供します。<br /><br />
+            もちろん、Python等を用いた業務効率化ツールの開発や、API連携を含んだ高度なWebシステムの構築も引き続き対応可能です。
           </p>
-          
+
           <div className="mt-6">
-    <h3 className="text-2xl font-semibold mb-4 text-indigo-600 border-b pb-2">スキルセット</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-indigo-600 border-b pb-2">スキルセット</h3>
 
-      {/* フロントエンド */}
-      <div className="mb-6">
-        <h4 className="text-xl font-medium mb-2 text-gray-700 flex items-center">
-            フロントエンド (Frontend)
-        </h4>
-        <div className="flex flex-wrap gap-2">
-            <span className="skill-tag bg-blue-100 text-blue-800">React/Next.js</span>
-            <span className="skill-tag bg-blue-100 text-blue-800">TypeScript</span>
-            <span className="skill-tag bg-blue-100 text-blue-800">Tailwind CSS</span>
-            <span className="skill-tag bg-blue-100 text-blue-800">Bootstrap CSS</span>
-            <span className="skill-tag bg-blue-100 text-blue-800">JavaScript (ES6+)</span>
-            <span className="skill-tag bg-blue-100 text-blue-800">HTML5/CSS3</span>
-        </div>
-      </div>
-
-      {/* バックエンド */}
-      <div className="mb-6">
-        <h4 className="text-xl font-medium mb-2 text-gray-700 flex items-center">
-            バックエンド & サーバー (Backend & Server)
-        </h4>
-        <div className="flex flex-wrap gap-2">
-            {/* 獲得されたスキルを並列で全て表示 */}
-            <span className="skill-tag bg-green-100 text-green-800">Node.js</span>
-            <span className="skill-tag bg-green-100 text-green-800">Express.js (Node.js)</span>
-            <span className="skill-tag bg-green-100 text-green-800">Python (Flask)</span> {/* Flaskの実績があれば含めます */}
-        </div>
-      </div>
-
-      {/* デスクトップアプリ */}
-      <div className="mb-6">
-        <h4 className="text-xl font-medium mb-2 text-gray-700 flex items-center">
-          デスクトップアプリ (Desktop App)
-        </h4>
-        <div className="flex flex-wrap gap-2">
-            <span className="skill-tag bg-purple-100 text-purple-800">Python (tkinter)</span>
-            <span className="skill-tag bg-purple-100 text-purple-800"> 帳票作成(openpyxl,xlwings,pandas)</span>
-            <span className="skill-tag bg-purple-100 text-purple-800"> 自動処理(pyautogui)</span>
-        </div>
-      </div>
-
-      {/* データベース・インフラ */}
-      <div className="mb-6">
-        <h4 className="text-xl font-medium mb-2 text-gray-700 flex items-center">
-            データベース & その他 (DB & Others)
-        </h4>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="skill-tag bg-orange-100 text-purple-800">SQLite</span>
-                    <span className="skill-tag bg-orange-100 text-purple-800">Git/GitHub</span>
-                </div>
+            {/* フロントエンド */}
+            <div className="mb-6">
+              <h4 className="text-xl font-medium mb-2 text-gray-700 flex items-center">
+                フロントエンド (Frontend)
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                <span className="skill-tag bg-blue-100 text-blue-800">React/Next.js</span>
+                <span className="skill-tag bg-blue-100 text-blue-800">TypeScript</span>
+                <span className="skill-tag bg-blue-100 text-blue-800">Tailwind CSS</span>
+                <span className="skill-tag bg-blue-100 text-blue-800">Bootstrap CSS</span>
+                <span className="skill-tag bg-blue-100 text-blue-800">JavaScript (ES6+)</span>
+                <span className="skill-tag bg-blue-100 text-blue-800">HTML5/CSS3</span>
               </div>
             </div>
-                </section>
+
+            {/* バックエンド */}
+            <div className="mb-6">
+              <h4 className="text-xl font-medium mb-2 text-gray-700 flex items-center">
+                バックエンド & サーバー (Backend & Server)
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {/* 獲得されたスキルを並列で全て表示 */}
+                <span className="skill-tag bg-green-100 text-green-800">Node.js</span>
+                <span className="skill-tag bg-green-100 text-green-800">Express.js (Node.js)</span>
+                <span className="skill-tag bg-green-100 text-green-800">Python (Flask)</span> {/* Flaskの実績があれば含めます */}
+              </div>
+            </div>
+
+            {/* デスクトップアプリ */}
+            <div className="mb-6">
+              <h4 className="text-xl font-medium mb-2 text-gray-700 flex items-center">
+                デスクトップアプリ (Desktop App)
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                <span className="skill-tag bg-purple-100 text-purple-800">Python (tkinter)</span>
+                <span className="skill-tag bg-purple-100 text-purple-800"> 帳票作成(openpyxl,xlwings,pandas)</span>
+                <span className="skill-tag bg-purple-100 text-purple-800"> 自動処理(pyautogui)</span>
+              </div>
+            </div>
+
+            {/* データベース・インフラ */}
+            <div className="mb-6">
+              <h4 className="text-xl font-medium mb-2 text-gray-700 flex items-center">
+                データベース & その他 (DB & Others)
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                <span className="skill-tag bg-orange-100 text-purple-800">SQLite</span>
+                <span className="skill-tag bg-orange-100 text-purple-800">Git/GitHub</span>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* 3. プロジェクト一覧セクション */}
         <section id="projects" className="my-12">
           <div className="flex items-center space-x-4 mb-8">
             <Briefcase className="w-8 h-8 text-indigo-500" />
             <h2 className="text-3xl font-semibold border-b-2 border-indigo-500 pb-1">実績 (Projects)</h2>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div key={project.id} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                {project.image && (
+                  <div className="mb-4 overflow-hidden rounded-lg">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-48 object-cover object-top hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
                 <h3 className="text-xl font-bold mb-2 text-indigo-600">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -132,10 +169,10 @@ const PortfolioPage = () => {
                     </span>
                   ))}
                 </div>
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm font-semibold text-indigo-500 hover:text-indigo-700 flex items-center"
                 >
                   プロジェクトを見る →
@@ -144,7 +181,7 @@ const PortfolioPage = () => {
             ))}
           </div>
         </section>
-        
+
         {/* 4. 連絡先セクション　 */}
         {/*<section id="contact" className="my-12 p-8 bg-white rounded-xl shadow-lg">
           <div className="flex items-center space-x-4 mb-6 justify-center">
