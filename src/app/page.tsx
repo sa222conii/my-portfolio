@@ -10,15 +10,15 @@ const projects = [
   {
     id: 4,
     title: "SEO対策ツール (Web App)",
-    description: "OpenAI APIを活用したSEO分析ツール。キーワードとURLを入力するだけで、競合分析と改善提案を自動生成します。",
-    tags: ["Next.js", "OpenAI API", "Web App", "Python"],
+    description: "OpenAI APIを活用したSEO分析ツール。Google認証を含むログイン機能を実装し、過去の分析履歴の保存・一覧表示が可能。継続的な改善サイクルをサポートする実用的なWebアプリです。",
+    tags: ["Next.js", "OpenAI API", "Google Auth", "Database"],
     link: "https://seo-ai-checker.vercel.app/",
     image: "",
   },
   {
     id: 1,
     title: "美容クリニック LP",
-    description: "30-40代女性をターゲットにした、ラグジュアリーで清潔感のあるランディングページ。SEOを意識した構成と、信頼感を醸成するデザインを重視しました。",
+    description: "30-40代女性をターゲットにした、ラグジュアリーで清潔感のあるランディングページ。ターゲット層に響くデザイン選定とSEOを意識した構成で、信頼感と集客力を最大化しました。",
     tags: ["HTML5", "CSS", "Design", "Responsive"],
     link: "/works/beauty-clinic/index.html",
     image: "",
@@ -26,7 +26,7 @@ const projects = [
   {
     id: 2,
     title: "SNSマーケティング LP",
-    description: "SNSマーケティング企業のサービス紹介LP。モダンで動的なデザインを採用し、動画制作やコンテンツ作成のクリエイティビティを強調しています。",
+    description: "SNSマーケティング企業のサービス紹介LP。モダンで動的なアニメーションを取り入れ、視覚的インパクトを重視。動画・コンテンツ制作のクリエイティビティを魅力的に表現しました。",
     tags: ["HTML5", "CSS", "JavaScript", "Animation"],
     link: "/works/funny-sns/index.html",
     image: "",
@@ -34,7 +34,7 @@ const projects = [
   {
     id: 3,
     title: "税理士事務所サイト (WordPress)",
-    description: "既存の静的サイトをWordPressテーマ化。お知らせ機能やブログ機能を実装し、クライアント自身で更新可能なCMSサイトとして構築しました。",
+    description: "既存の静的サイトをWordPress独自テーマ化。お知らせやブログ機能を実装し、クライアント自身で容易にコンテンツ運用・更新ができるCMSサイトとして再構築しました。",
     tags: ["WordPress", "PHP", "CMS", "Theme Dev"],
     link: "/works/wp_tax_office.pdf",
     image: "",
@@ -42,7 +42,7 @@ const projects = [
   {
     id: 5,
     title: "セミナー資料作成 (スライド)",
-    description: "視覚的な伝わりやすさを重視した、セミナー用プレゼンテーション資料作成。構成からデザインまで担当しました。",
+    description: "「伝わる」を最優先にしたセミナー用プレゼンテーション資料。ターゲット層に合わせた論理的な構成と視認性の高いデザインで、情報の理解と定着を促す資料を作成しました。",
     tags: ["PowerPoint", "Design", "Presentation", "PDF"],
     link: "/works/suit.pdf",
     image: "",
