@@ -8,6 +8,14 @@ import ContactModal from '../components/ContactModal';
 // ポートフォリオのダミーデータ
 const projects = [
   {
+    id: 6,
+    title: "予約システム (Web App)",
+    description: "Vercelにデプロイされた予約システム。Googleログイン機能、Stripe決済連携（ダミーカード番号: 4242 4242 4242 4242）、決済完了後のSlack通知機能を実装しました。",
+    tags: ["Next.js", "Vercel", "Google Auth", "Stripe", "Slack"],
+    link: "https://reservation-system-pink-eta.vercel.app/",
+    image: "",
+  },
+  {
     id: 4,
     title: "SEO対策ツール (Web App)",
     description: "OpenAI APIを活用したSEO分析ツール。Google認証を含むログイン機能を実装し、過去の分析履歴の保存・一覧表示が可能。継続的な改善サイクルをサポートする実用的なWebアプリです。",
