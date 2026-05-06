@@ -1,56 +1,56 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Briefcase, User, Mail } from 'lucide-react'; // アイコンライブラリ
+import { Briefcase, User } from 'lucide-react'; // アイコンライブラリ
 import ContactModal from '../components/ContactModal';
 
 
 // ポートフォリオのダミーデータ
 const projects = [
   {
-    id: 6,
+    id: 1,
+    title: "行政書士事務所サイト (Web App)",
+    description: "建設業許可申請を専門とする行政書士事務所のWebサイト。元現場監督の代表の強みを訴求するランディングページとして設計し、無料相談への導線・フルリモート対応・LINE連携UIのモックアップを含む構成で制作しました。",
+    tags: ["Next.js", "Vercel", "Responsive", "Design"],
+    link: "https://gyousei-selector.vercel.app/",
+    image: "",
+  },
+  {
+    id: 2,
     title: "予約システム (Web App)",
-    description: "Vercelにデプロイされた予約システム。Googleログイン機能、Stripe決済連携（ダミーカード番号: 4242 4242 4242 4242）、決済完了後のSlack通知機能を実装しました。",
+    description: "Vercelにデプロイされた予約システム。Googleログイン・Stripe決済・Slack通知を組み合わせたフルスタック構成で、実務レベルの外部API連携を実装しました。",
     tags: ["Next.js", "Vercel", "Google Auth", "Stripe", "Slack"],
     link: "https://reservation-system-pink-eta.vercel.app/",
     image: "",
   },
   {
-    id: 4,
+    id: 3,
     title: "SEO対策ツール (Web App)",
-    description: "OpenAI APIを活用したSEO分析ツール。Google認証を含むログイン機能を実装し、過去の分析履歴の保存・一覧表示が可能。継続的な改善サイクルをサポートする実用的なWebアプリです。",
+    description: "OpenAI APIを活用し、URLを入力するだけでSEO課題とその改善提案を自動生成するWebアプリ。Google認証・分析履歴管理を実装し、継続的なSEO改善をサポートします。",
     tags: ["Next.js", "OpenAI API", "Google Auth", "Database"],
     link: "https://seo-ai-checker.vercel.app/",
     image: "",
   },
   {
-    id: 1,
+    id: 4,
     title: "美容クリニック LP",
-    description: "30-40代女性をターゲットにした、ラグジュアリーで清潔感のあるランディングページ。ターゲット層に響くデザイン選定とSEOを意識した構成で、信頼感と集客力を最大化しました。",
+    description: "30〜40代女性をターゲットにした美容クリニックのLP。高級感・清潔感を両立するカラー・フォント選定にこだわり、ファーストビューからCTAへの視線誘導を意識したセクション構成で制作しました。",
     tags: ["HTML5", "CSS", "Design", "Responsive"],
     link: "/works/beauty-clinic/index.html",
     image: "",
   },
   {
-    id: 2,
+    id: 5,
     title: "SNSマーケティング LP",
-    description: "SNSマーケティング企業のサービス紹介LP。モダンで動的なアニメーションを取り入れ、視覚的インパクトを重視。動画・コンテンツ制作のクリエイティビティを魅力的に表現しました。",
+    description: "SNSマーケティング企業のサービス紹介LP。CSSアニメーションとJavaScriptを活用したスクロール連動エフェクトで視覚的インパクトを演出し、クリエイティブ企業らしいダイナミックな世界観を表現しました。",
     tags: ["HTML5", "CSS", "JavaScript", "Animation"],
     link: "/works/funny-sns/index.html",
     image: "",
   },
   {
-    id: 3,
-    title: "税理士事務所サイト (WordPress)",
-    description: "既存の静的サイトをWordPress独自テーマ化。お知らせやブログ機能を実装し、クライアント自身で容易にコンテンツ運用・更新ができるCMSサイトとして再構築しました。",
-    tags: ["WordPress", "PHP", "CMS", "Theme Dev"],
-    link: "/works/wp_tax_office.pdf",
-    image: "",
-  },
-  {
-    id: 5,
+    id: 6,
     title: "セミナー資料作成 (スライド)",
-    description: "「伝わる」を最優先にしたセミナー用プレゼンテーション資料。ターゲット層に合わせた論理的な構成と視認性の高いデザインで、情報の理解と定着を促す資料を作成しました。",
+    description: "SEO・Webマーケティングをテーマにしたセミナー用スライド資料。情報の優先度に基づいたレイアウト設計と、視認性を高めるビジュアル表現にこだわり、「伝わる」資料を作成しました。",
     tags: ["PowerPoint", "Design", "Presentation", "PDF"],
     link: "/works/suit.pdf",
     image: "",
